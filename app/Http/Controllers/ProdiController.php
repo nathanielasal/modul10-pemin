@@ -16,34 +16,4 @@ class ProdiController extends Controller
     {
         //
     }
-
-    public function createProdi(Request $request) 
-    {
-        $prodi = Prodi::create([
-            'nama' => $request->nama,
-        ]);
-
-        return response()->json([
-            'success' => true,
-            'message' => 'New prodi created',
-            'data' => [
-                'prodi' => $prodi,
-            ],
-        ], 200);
-    }
-
-    public function getAllProdi() //get semua prodi
-    {
-        $prodi = Prodi::with('mahasiswa')->get();
-
-        return response()->json([
-            'success' => true,
-            'message' => 'All prodi grabbed',
-            'data' => [
-                'prodi' => $prodi
-            ],
-        ], 200);
-    }
-
-  
 }

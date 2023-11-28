@@ -13,14 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('mahasiswas', function (Blueprint $table) {
-            $table->string('nim')->primary();
-            $table->string('nama');
-            $table->integer('angkatan');
-            $table->string('password');
-            $table->timestamps();
-
-            $table->foreignId('prodiId')->unsigned();
+        Schema::table('mahasiswas', function (Blueprint $table) {
+            $table->string('token')->unique()->nullable(); 
         });
     }
 

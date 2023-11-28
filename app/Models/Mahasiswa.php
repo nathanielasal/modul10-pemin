@@ -12,7 +12,7 @@ class Mahasiswa extends Model
      * @var array
      */
 
-    protected $fillable = [
+    protected $fillable = [ // dikerjakan oleh Shafa Nathaniela Salwa
         'nim',
         'nama',
         'angkatan',
@@ -22,7 +22,7 @@ class Mahasiswa extends Model
 
     protected $hidden = [];
 
-    public function prodi()
+    public function prodi() // dikerjakan oleh Shafa Nathaniela Salwa
     {
         return $this->belongsTo(Prodi::class, 'prodiId');
     }
