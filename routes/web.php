@@ -23,3 +23,5 @@ $router->group(['prefix' => 'auth'], function () use ($router) { // dikerjakan o
 });
 
 $router->get('/mahasiswa', 'MahasiswaController@getAllMahasiswa'); // dikerjakan oleh Shafa Nathaniela Salwa
+
+$router->get('/prodi', 'ProdiController@getAllProdi'); //-- dikerjakan oleh Ranatika Putri Aulia

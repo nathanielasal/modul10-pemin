@@ -12,11 +12,16 @@ class Prodi extends Model
      * @var array
      */
 
-    protected $fillable = [
-        //
-    ];
+     protected $fillable = [ //-- dikerjakan oleh Ranatika Putri Aulia
+        'nama'
+    ]; 
 
     protected $hidden = [];
+
+    public function mahasiswas()
+    {
+        return $this->hasMany(Mahasiswa::class, 'prodiId');
+    }
 
 
 }
