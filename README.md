@@ -1,3 +1,8 @@
+Nama Anggota Kelompok: 
+1. Shafa Nathaniela Salwa (215150701111028) - getAllMahasiswa, register
+2. Dzakiyyah Afifah Rahma (215150701111027) - getAllProdi, prodiSeeder
+3. Ranatika Putri Aulia (215150700111055) - login, getMahasiswaByToken
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
