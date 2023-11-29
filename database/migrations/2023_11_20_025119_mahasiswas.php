@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('nama');
             $table->integer('angkatan');
             $table->string('password');
-            $table->timestamps();
 
             $table->foreignId('prodiId')->unsigned();
         });

@@ -12,15 +12,21 @@ class Mahasiswa extends Model
      * @var array
      */
 
+    protected $primaryKey = 'nim';
+    public $timestamps = false;
+
     protected $fillable = [ // dikerjakan oleh Shafa Nathaniela Salwa
         'nim',
         'nama',
         'angkatan',
         'prodiId',
         'password',
+        'token',
     ];
 
-    protected $hidden = [];
+    protected $hidden = [
+        'password',
+    ];
 
     public function prodi() // dikerjakan oleh Shafa Nathaniela Salwa
     {
